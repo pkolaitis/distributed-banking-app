@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "banking-app"
+  "defaultProject": "banking-app",
+  "cli": {
+    "analytics": "1a5a71c6-cee3-4352-8600-5eeaf6e22ca1"
+  }
 }

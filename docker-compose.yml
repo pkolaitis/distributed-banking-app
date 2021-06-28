@@ -1,0 +1,23 @@
+version: "3"
+services:
+      
+  api:
+    container_name: nestjs_api
+    image: nestjs-api:1.0.0
+    build:
+      context: .
+      dockerfile: ./api/Dockerfile.api
+    ports:
+      - 3000:3000
+      - 9229:9229
+
+  app:
+    container_name: angular_app
+    image: angular-app:1.0.0
+    build:
+      context: .
+      dockerfile: ./monitor-app/Dockerfile
+    ports:
+      - 4200:4200
+
+
